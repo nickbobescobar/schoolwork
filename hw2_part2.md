@@ -26,3 +26,30 @@ Reads the contents of a file into the void, but do it in the background.
 
     cat <file> > /dev/null && echo "cleaning done!"
 Reads the contents of a file into the void, then print "cleaning done!" to the terminal.
+
+# Q2: Hard versus Symbolic Links
+
+A hard link refers to the physical address of the file on the hard disk and will continue to work even if the file is moved in the directory system. Running <i>ls -i</i> will return the <i>inode</i> of each file, which is the direct reference to an address on the hard disk. For example, the current inodes for my <i>hw1_materials</i> folder:
+
+    ompl@ompl-VirtualBox:~/Documents/hw_part1/hw1_materials$
+    >>> ls -i| cat
+    301355 add.c
+    271622 add_translated.c
+    289096 book.txt
+    289441 err
+    301350 grades.txt
+    301344 numbers
+    301360 part1.txt
+    301358 part2.txt
+    288134 phone_list
+    303122 q5
+    289436 us-states-new.csv
+
+
+A symbolic link references the location of the file through the directory system. If a file is moved in the directory system, then the symbolic link will break. This is how file locations are typically referred to, e.g.
+
+    /Documents/myFolder/myFile.txt
+
+# Q3: Assignment versus Export
+
+A normal assignment (a=5) will initialize the variable locally, i.e. only in the context of this shell. Exporting the assignment (export a=5) will define the variable globally and make it accessible from other shells.
