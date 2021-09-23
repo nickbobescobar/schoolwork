@@ -1,0 +1,336 @@
+robot:
+  - name: "base"
+    joint: "fixed"
+    parent: "root"
+    tip: [0, 0, 0]
+
+    geometry:
+      - type: "circle"
+        dimensions: [0.499]
+        offset: [0, 0, 0]
+        color: [0.9, 0, 0.9, 1]
+      - type: "circle"
+        dimensions: [0.1]
+        offset: [0, 0, 0]
+        color: [0.2, 0.2, 0.2, 1]
+
+  - name: "link_1"
+    joint: "continuous"
+    parent: "base"
+    tip: [1, 0, 0]
+
+    geometry:
+      - type: "circle"
+        dimensions: [0.499]
+        offset: [0, 0, 0]
+        color: [0.9, 0, 0.9, 1]
+      - type: "circle"
+        dimensions: [0.1]
+        offset: [0, 0, 0]
+        color: [0.2, 0.2, 0.2, 1]
+
+  - name: "link_2"
+    joint: "continuous"
+    parent: "link_1"
+    tip: [1, 0, 0]
+
+    geometry:
+      - type: "circle"
+        dimensions: [0.499]
+        offset: [0, 0, 0]
+        color: [0.9, 0, 0.9, 1]
+      - type: "circle"
+        dimensions: [0.1]
+        offset: [0, 0, 0]
+        color: [0.2, 0.2, 0.2, 1]
+
+  - name: "link_3"
+    joint: "continuous"
+    parent: "link_2"
+    tip: [1, 0, 0]
+
+    geometry:
+      - type: "circle"
+        dimensions: [0.499]
+        offset: [0, 0, 0]
+        color: [0.9, 0, 0.9, 1]
+      - type: "circle"
+        dimensions: [0.1]
+        offset: [0, 0, 0]
+        color: [0.2, 0.2, 0.2, 1]
+
+  - name: "link_4"
+    joint: "continuous"
+    parent: "link_3"
+    tip: [1, 0, 0]
+
+    geometry:
+      - type: "circle"
+        dimensions: [0.499]
+        offset: [0, 0, 0]
+        color: [0.9, 0, 0.9, 1]
+      - type: "circle"
+        dimensions: [0.1]
+        offset: [0, 0, 0]
+        color: [0.2, 0.2, 0.2, 1]
+
+  - name: "link_5"
+    joint: "continuous"
+    parent: "link_4"
+    tip: [1, 0, 0]
+
+    geometry:
+      - type: "circle"
+        dimensions: [0.499]
+        offset: [0, 0, 0]
+        color: [0.9, 0, 0.9, 1]
+      - type: "circle"
+        dimensions: [0.1]
+        offset: [0, 0, 0]
+        color: [0.2, 0.2, 0.2, 1]
+
+  - name: "link_6"
+    joint: "continuous"
+    parent: "link_5"
+    tip: [1, 0, 0]
+
+    geometry:
+      - type: "circle"
+        dimensions: [0.499]
+        offset: [0, 0, 0]
+        color: [0.9, 0, 0.9, 1]
+      - type: "circle"
+        dimensions: [0.1]
+        offset: [0, 0, 0]
+        color: [0.2, 0.2, 0.2, 1]
+
+  - name: "link_7"
+    joint: "continuous"
+    parent: "link_6"
+    tip: [1, 0, 0]
+
+    geometry:
+      - type: "circle"
+        dimensions: [0.499]
+        offset: [0, 0, 0]
+        color: [0.9, 0, 0.9, 1]
+      - type: "circle"
+        dimensions: [0.1]
+        offset: [0, 0, 0]
+        color: [0.2, 0.2, 0.2, 1]
+
+  - name: "link_8"
+    joint: "continuous"
+    parent: "link_7"
+    tip: [1, 0, 0]
+
+    geometry:
+      - type: "circle"
+        dimensions: [0.499]
+        offset: [0, 0, 0]
+        color: [0.9, 0, 0.9, 1]
+      - type: "circle"
+        dimensions: [0.1]
+        offset: [0, 0, 0]
+        color: [0.2, 0.2, 0.2, 1]
+
+  - name: "link_9"
+    joint: "continuous"
+    parent: "link_8"
+    tip: [1, 0, 0]
+
+    geometry:
+      - type: "circle"
+        dimensions: [0.499]
+        offset: [0, 0, 0]
+        color: [0.9, 0, 0.9, 1]
+      - type: "circle"
+        dimensions: [0.1]
+        offset: [0, 0, 0]
+        color: [0.2, 0.2, 0.2, 1]
+
+  - name: "link_10"
+    joint: "continuous"
+    parent: "link_9"
+    tip: [1, 0, 0]
+
+    geometry:
+      - type: "circle"
+        dimensions: [0.499]
+        offset: [0, 0, 0]
+        color: [0.9, 0, 0.9, 1]
+      - type: "circle"
+        dimensions: [0.1]
+        offset: [0, 0, 0]
+        color: [0.2, 0.2, 0.2, 1]
+
+  - name: "link_11"
+    joint: "continuous"
+    parent: "link_10"
+    tip: [1, 0, 0]
+
+    geometry:
+      - type: "circle"
+        dimensions: [0.499]
+        offset: [0, 0, 0]
+        color: [0.9, 0, 0.9, 1]
+      - type: "circle"
+        dimensions: [0.1]
+        offset: [0, 0, 0]
+        color: [0.2, 0.2, 0.2, 1]
+
+  - name: "link_12"
+    joint: "continuous"
+    parent: "link_11"
+    tip: [1, 0, 0]
+
+    geometry:
+      - type: "circle"
+        dimensions: [0.499]
+        offset: [0, 0, 0]
+        color: [0.9, 0, 0.9, 1]
+      - type: "circle"
+        dimensions: [0.1]
+        offset: [0, 0, 0]
+        color: [0.2, 0.2, 0.2, 1]
+
+  - name: "link_13"
+    joint: "continuous"
+    parent: "link_12"
+    tip: [1, 0, 0]
+
+    geometry:
+      - type: "circle"
+        dimensions: [0.499]
+        offset: [0, 0, 0]
+        color: [0.9, 0, 0.9, 1]
+      - type: "circle"
+        dimensions: [0.1]
+        offset: [0, 0, 0]
+        color: [0.2, 0.2, 0.2, 1]
+
+  - name: "link_14"
+    joint: "continuous"
+    parent: "link_13"
+    tip: [1, 0, 0]
+
+    geometry:
+      - type: "circle"
+        dimensions: [0.499]
+        offset: [0, 0, 0]
+        color: [0.9, 0, 0.9, 1]
+      - type: "circle"
+        dimensions: [0.1]
+        offset: [0, 0, 0]
+        color: [0.2, 0.2, 0.2, 1]
+
+  - name: "link_15"
+    joint: "continuous"
+    parent: "link_14"
+    tip: [1, 0, 0]
+
+    geometry:
+      - type: "circle"
+        dimensions: [0.499]
+        offset: [0, 0, 0]
+        color: [0.9, 0, 0.9, 1]
+      - type: "circle"
+        dimensions: [0.1]
+        offset: [0, 0, 0]
+        color: [0.2, 0.2, 0.2, 1]
+
+  - name: "link_16"
+    joint: "continuous"
+    parent: "link_15"
+    tip: [1, 0, 0]
+
+    geometry:
+      - type: "circle"
+        dimensions: [0.499]
+        offset: [0, 0, 0]
+        color: [0.9, 0, 0.9, 1]
+      - type: "circle"
+        dimensions: [0.1]
+        offset: [0, 0, 0]
+        color: [0.2, 0.2, 0.2, 1]
+
+  - name: "link_17"
+    joint: "continuous"
+    parent: "link_16"
+    tip: [1, 0, 0]
+
+    geometry:
+      - type: "circle"
+        dimensions: [0.499]
+        offset: [0, 0, 0]
+        color: [0.9, 0, 0.9, 1]
+      - type: "circle"
+        dimensions: [0.1]
+        offset: [0, 0, 0]
+        color: [0.2, 0.2, 0.2, 1]
+
+  - name: "link_18"
+    joint: "continuous"
+    parent: "link_17"
+    tip: [1, 0, 0]
+
+    geometry:
+      - type: "circle"
+        dimensions: [0.499]
+        offset: [0, 0, 0]
+        color: [0.9, 0, 0.9, 1]
+      - type: "circle"
+        dimensions: [0.1]
+        offset: [0, 0, 0]
+        color: [0.2, 0.2, 0.2, 1]
+
+  - name: "link_19"
+    joint: "continuous"
+    parent: "link_18"
+    tip: [1, 0, 0]
+
+    geometry:
+      - type: "circle"
+        dimensions: [0.499]
+        offset: [0, 0, 0]
+        color: [0.9, 0, 0.9, 1]
+      - type: "circle"
+        dimensions: [0.1]
+        offset: [0, 0, 0]
+        color: [0.2, 0.2, 0.2, 1]
+
+  - name: "link_20"
+    joint: "continuous"
+    parent: "link_19"
+    tip: [1, 0, 0]
+
+    geometry:
+      - type: "circle"
+        dimensions: [0.499]
+        offset: [0, 0, 0]
+        color: [0.9, 0, 0.9, 1]
+      - type: "circle"
+        dimensions: [0.1]
+        offset: [0, 0, 0]
+        color: [0.2, 0.2, 0.8, 1]
+
+  - name: "obstacle_1"
+    tip: [4, -1, 0]
+    geometry: 
+    - type: "box"
+      dimensions: [0.25, 0.25]
+      color: [0.2, 0.2, 0.2, 1]
+
+  - name: "obstacle_2"
+    tip: [8, 7.6, 0]
+    geometry: 
+    - type: "box"
+      dimensions: [0.25, 0.25]
+      color: [0.2, 0.2, 0.2, 1]
+
+  - name: "obstacle_3"
+    tip: [14, -3, 0]
+    geometry: 
+    - type: "box"
+      dimensions: [0.25, 0.25]
+      color: [0.2, 0.2, 0.2, 1]

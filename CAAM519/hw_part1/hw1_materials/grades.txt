@@ -1,0 +1,7 @@
+1 John     Physics   80
+2 Matt    Maths     90
+3 Kaira    Biology   87
+4 Cameron    English   85
+5 Sarraf     History   79
+6 John     Geography   100
+7 John     Chemistry   75

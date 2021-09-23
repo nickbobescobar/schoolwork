@@ -1,0 +1,68 @@
+robot:
+  - name: "base"
+    joint: "fixed"
+    parent: "root"
+    tip: [0, 0, 0]
+    geometry:
+      - type: "circle"
+        dimensions: [1]
+        offset: [0, 0, 0]
+        color: [0.9, 0, 0.9, 1]
+      - type: "circle"
+        dimensions: [0.1]
+        offset: [0, 0, 0]
+        color: [0.2, 0.2, 0.2, 1]
+
+  - name: "link_1"
+    joint: "revolute"
+    limits:
+      upper: 3.14
+      lower: -3.14
+    parent: "base"
+    tip: [6, 0, 0]
+    allowed: ["base"]
+    geometry:
+      - type: "box"
+        dimensions: [5, 0.6]
+        offset: [0, 0, 0]
+        color: [0.6, 0, 0.6, 0.8]
+      - type: "box"
+        dimensions: [4.5, 0.2]
+        offset: [0, 0, 0]
+        color: [0.8, 0.8, 0.8, 0.8]
+  
+  - name: "link_2"
+    joint: "prismatic"
+    limits: 
+      upper: 9
+      lower: 0
+    parent: "link_1"
+    tip: [0.5, 0, 0]
+    allowed: ["link_1", "base"]
+    geometry:
+      - type: "box"
+        dimensions: [5, 0.4]
+        offset: [0, 0, 0]
+        color: [0.8, 0, 0.8, 0.8]
+      - type: "circle"
+        dimensions: [0.1]
+        color: [0.2, 0.2, 0.2, 1]
+        offset: [-5, 0, 0]
+  
+  - name: "end_effector"
+    joint: "fixed"
+    parent: "link_2"
+    tip: [5, 0, 0]
+    allowed: ["link_2", "link_1", "base"]
+    geometry:
+      - type: "circle"
+        dimensions: [0.5]
+        offset: [0, 0, 0]
+        color: [0.2, 0.2, 0.8, 1]
+
+  - name: "obstacle_1"
+    tip: [4, -1, 0]
+    geometry: 
+    - type: "box"
+      dimensions: [0.25, 0.25]
+      color: [0.2, 0.8, 0.2, 1]

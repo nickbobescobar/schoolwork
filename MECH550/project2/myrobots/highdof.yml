@@ -1,0 +1,84 @@
+robot:
+  - name: "base"
+    joint: "fixed"
+    parent: "root"
+    tip: [0, 0, 0]
+
+    geometry:
+      - type: "circle"
+        dimensions: [0.499]
+        offset: [0, 0, 0]
+        color: [0.9, 0, 0.9, 1]
+      - type: "circle"
+        dimensions: [0.1]
+        offset: [0, 0, 0]
+        color: [0.2, 0.2, 0.2, 1]
+
+  - name: "link_1"
+    joint: "continuous"
+    parent: "base"
+    tip: [6, 0, 0]
+
+    geometry:
+      - type: "box"
+        dimensions: [2.75, 0.15]
+        offset: [-2.75, 0, 0]
+        color: [0.8, 0, 0.8, 0.8]
+      - type: "circle"
+        dimensions: [0.499]
+        offset: [0, 0, 0]
+        color: [0.9, 0, 0.9, 1]
+      - type: "circle"
+        dimensions: [0.1]
+        offset: [0, 0, 0]
+        color: [0.2, 0.2, 0.2, 1]
+
+  - name: "link_2"
+    joint: "continuous"
+    parent: "link_1"
+    tip: [6, 0, 0]
+
+    geometry:
+      - type: "box"
+        dimensions: [2.75, 0.125]
+        offset: [-2.75, 0, 0]
+        color: [0.8, 0, 0.8, 0.8]
+      - type: "circle"
+        dimensions: [0.499]
+        offset: [0, 0, 0]
+        color: [0.9, 0, 0.9, 1]
+      - type: "circle"
+        dimensions: [0.1]
+        offset: [0, 0, 0]
+        color: [0.2, 0.2, 0.2, 1]
+
+  - name: "link_3"
+    joint: "continuous"
+    parent: "link_2"
+    tip: [6, 0, 0]
+
+    geometry:
+      - type: "box"
+        dimensions: [2.75, 0.1]
+        offset: [-2.75, 0, 0]
+        color: [0.8, 0, 0.8, 0.8]
+      - type: "circle"
+        dimensions: [0.25]
+        offset: [0, 0, 0]
+        color: [0.3, 0, 1.0, 1]
+
+  - name: "fence_1"
+    tip: [0, 6.8, 0]
+    geometry: 
+    - type: "box"
+      dimensions: [4, 0.5]
+      color: [0.2, 0.8, 0.2, 1]
+      offset: [0, 0.5, 0]
+  
+  - name: "fence_2"
+    tip: [0, -2, 0]
+    geometry: 
+    - type: "box"
+      dimensions: [0.5, 4]
+      color: [0.2, 0.2, 0.2, 1]
+      offset: [0, -4, 0]

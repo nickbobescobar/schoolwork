@@ -1,0 +1,44 @@
+robot:
+  - name: "base"
+    joint: "fixed"
+    parent: "root"
+    tip: [0, 0, 0]
+
+    geometry:
+      - type: "circle"
+        dimensions: [0.1]
+        offset: [0, 0, 0]
+        color: [0.2, 0.2, 0.2, 1]
+
+  - name: "link_1"
+    joint: "continuous"
+    parent: "base"
+    tip: [4, 0, 0]
+    allowed: ["base"]
+
+    geometry:
+      - type: "box"
+        dimensions: [4, 0.3]
+        offset: [0, 0, 0]
+        color: [0.6, 0, 0.6, 0.8]
+      - type: "circle"
+        # Radius of less than 1 to prevent interference
+        dimensions: [0.999]
+        offset: [0, 0, 0]
+        color: [0.6, 0, 0.6, 0.8]
+      - type: "circle"
+        dimensions: [0.1]
+        color: [0.2, 0.2, 0.2, 1]
+        offset: [0, 0, 0]
+  
+  - name: "link_2"
+    joint: "continuous"
+    parent: "link_1"
+    tip: [0, 3, 0]
+    allowed: ["base"]
+
+    geometry:
+      - type: "box"
+        dimensions: [0.2, 2]
+        offset: [0, 0, 0]
+        color: [0.8, 0, 0.8, 0.8]
