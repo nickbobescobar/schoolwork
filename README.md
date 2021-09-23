@@ -1,2 +1,2 @@
-# CAAM-519
-coursework repo for CAAM 519
+# schoolwork
+The place to keep all the class-related coding files
