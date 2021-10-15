@@ -1,0 +1,44 @@
+robot:
+  - name: "l1"
+    joint: "flying"
+    limits:
+      upper: [ 15,  15]
+      lower: [-15, -15]
+    geometry:
+      - type: "box"
+        dimensions: [0.19, 0.19]
+
+  - name: "obstacle_top"
+    geometry:
+      - type: "simple"
+        points:
+          - [-8, 0.25]
+          - [-7, 0.25]
+          - [0, 9]
+          - [4, 4]
+          - [0, 0.25]
+          - [8, 0.25]
+          - [0, 10]
+
+  - name: "obstacle_bottom"
+    geometry:
+      - type: "simple"
+        points:
+          - [-8, -0.25]
+          - [-7, -0.25]
+          - [0, -9]
+          - [4, -4]
+          - [0, -0.25]
+          - [8, -0.25]
+          - [0, -10]
+
+states:
+  - name: "start"
+    configuration:
+    - frame: "l1"
+      value: [-7, 2, 0]
+
+  - name: "goal"
+    configuration:
+    - frame: "l1"
+      value: [10, 0, 0]

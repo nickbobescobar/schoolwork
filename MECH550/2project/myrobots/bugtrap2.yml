@@ -14,10 +14,7 @@ robot:
         color: [0.2, 0.2, 0.2, 1]
 
   - name: "link_1"
-    joint: "revolute"
-    limits:
-      upper: 3.14
-      lower: -3.14
+    joint: "continuous"
     parent: "base"
     tip: [6, 0, 0]
     allowed: ["base"]
@@ -61,8 +58,28 @@ robot:
         color: [0.2, 0.2, 0.8, 1]
 
   - name: "obstacle_1"
-    tip: [4, -1, 0]
+    tip: [15, -6, 2.2]
+    allowed: ["link_2", "link_1", "base"]
     geometry: 
     - type: "box"
-      dimensions: [0.25, 0.25]
+      dimensions: [5, 0.25]
       color: [0.2, 0.8, 0.2, 1]
+      offset: [1, 0.8, 0]
+
+  - name: "obstacle_2"
+    tip: [15, -6, 0.5]
+    allowed: ["link_2", "link_1", "base"]
+    geometry: 
+    - type: "box"
+      dimensions: [3, 0.25]
+      color: [0.2, 0.8, 0.2, 1]
+      offset: [4, 0, 0]
+
+  - name: "obstacle_3"
+    tip: [0, 0, 0.3]
+    allowed: ["link_2", "link_1", "base"]
+    geometry: 
+    - type: "box"
+      dimensions: [5, 0.25]
+      color: [0.2, 0.2, 0.2, 1]
+      offset: [16, 0, 0]
